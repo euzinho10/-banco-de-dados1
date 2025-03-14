@@ -1,0 +1,23 @@
+CREATE TABLE Médico 
+( 
+ Cadastro INT PRIMARY KEY,  
+ Número de pacientes INT,  
+ Pacientes INT,  
+); 
+
+CREATE TABLE Paciente 
+( 
+ Cadastro INT PRIMARY KEY,  
+ Bloco/Sala/Localização no Hospital INT,  
+ Nome INT,  
+ Onde mora INT,  
+); 
+
+CREATE TABLE Consulta 
+( 
+ Cadastro INT PRIMARY KEY,  
+ Cadastro INT PRIMARY KEY,  
+); 
+
+ALTER TABLE Consulta ADD FOREIGN KEY(Cadastro) REFERENCES Médico (Cadastro)
+ALTER TABLE Consulta ADD FOREIGN KEY(Cadastro) REFERENCES Paciente (Cadastro)
